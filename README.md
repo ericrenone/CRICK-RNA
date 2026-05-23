@@ -1,11 +1,6 @@
 **CRICK - RNA**  
 *Open-source platform for RNA science, computation, and discovery*
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Python](https://img.shields.io/badge/Python-3.10%2B-blue.svg)](https://www.python.org)
-[![Stars](https://img.shields.io/github/stars/crickedev/crick-rna.svg)](https://github.com/crickedev/crick-rna)
-[![DOI](https://zenodo.org/badge/123456789.svg)](https://zenodo.org/badge/latestdoi/123456789)
-
 ### Overview
 
 CRICK - RNA is a community-driven, open-source platform that unifies canonical RNA science with reproducible computational tooling, curated datasets, and benchmarked workflows. Named in honor of Francis Crick’s formulation of the central dogma and the wobble hypothesis, the project treats RNA as the operational substrate of cellular information flow — sequence, structure, modification, interaction, regulation, and dynamics — and provides production-grade primitives for every layer of that stack.
@@ -250,21 +245,3 @@ modifications = ModificationAnnotator.annotate(seq, marks=["m6A", "m5C", "psi"])
 
 # Inverse design conditioned on a target 3D backbone
 designs = Designer.inverse_fold(target_backbone="ribozyme.pdb", model="grnade", n=64)
-```
-
-See the [full documentation](https://github.com/crickedev/crick-rna/wiki) for advanced workflows including mRNA UTR optimization, circRNA design, Cas13 guide screening, and single-cell perturbation prediction.
-
-### Contributing
-
-We welcome contributions of code, datasets, model wrappers, benchmarks, and documentation. Please read our [Contributing Guide](CONTRIBUTING.md) and [Code of Conduct](CODE_OF_CONDUCT.md). Every pull request runs the full benchmark regression suite to ensure quality.
-
-### License
-
-MIT License — see [LICENSE](LICENSE) for details.
-
----
-
-**CRICK - RNA**: the canonical RNA stack, made reproducible.
-
-⭐ Star the repo if you find it useful.
-Questions or suggestions? Open an issue or reach out on Discord.
